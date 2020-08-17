@@ -20,7 +20,7 @@ function MarketTabs() {
                     height: 64,
                 },
                 tabStyle: {
-                    flexDirection: 'row',
+                    flexDirection: 'column',
                     alignItems: 'center',
                     justifyContent: 'center'
                 },
@@ -31,7 +31,7 @@ function MarketTabs() {
                 },
                 labelStyle: {
                     fontSize: 10,
-                    marginLeft: 10,
+                    justifyContent: 'center'
                 },
                 inactiveBackgroundColor: '#285B7A',
                 activeBackgroundColor: '#fff',

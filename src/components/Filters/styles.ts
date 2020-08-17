@@ -30,6 +30,7 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         marginTop: 20,
         justifyContent: 'space-between',
+        alignItems: 'center',
 
 
         borderTopWidth: 0.5,
@@ -41,9 +42,11 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         justifyContent: 'center',
         alignItems: 'center',
+        
         width: 100,
-        marginLeft: 10,
-        backgroundColor: '#F9F8F8'
+        height: 50,
+        marginLeft: 4,
+        backgroundColor: '#F9F8F8',
     },
 
     textButtonFilter: {
@@ -51,7 +54,7 @@ const styles = StyleSheet.create({
     },
 
     pickerSelect: {
-        width: '60%',
+        width: '70%',
         height: 45,
         fontSize: 13,
     },

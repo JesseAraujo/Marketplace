@@ -16,7 +16,11 @@ function ProductsList() {
 
 
         <View style={styles.content}>
-            <ScrollView horizontal={true}>
+            <ScrollView 
+                showsHorizontalScrollIndicator={false}
+                horizontal={true}
+            >
+
                 <View style={styles.store}>
                     <View style={styles.groupStoreName}>
                         <Image source={logoImage} style={styles.logotImage} />
@@ -24,37 +28,83 @@ function ProductsList() {
                     </View>
 
                     <Image source={ProductImage} style={styles.productImage} />
+
+                    <View style={styles.informations}>
+                        <Text style={styles.nameProduct}>Neque porro dfs s das das quisquam</Text>
+                        <Text style={styles.costProduct}>R$ 110,90</Text>
+                        <Text style={styles.oldCostProduct}>R$ 150,85</Text>
+                        <Text style={styles.pay}>10 x 11,09 sem juros</Text>
+                        <RectButton style={styles.buttonBuy}>
+                            <Ionicons name="ios-cart" style={styles.iconButtonBuy}/>
+                            <Text style={styles.textButtonBuy}>Comprar agora</Text>
+                        </RectButton>
+                    </View>
                 </View>
+
 
                 <View style={styles.store}>
                     <View style={styles.groupStoreName}>
                         <Image source={logoImage} style={styles.logotImage} />
                         <Text style={styles.nameStore}>Centauro</Text>
                     </View>
-                    <View style={styles.containerImageProducts}>
-                        <Image source={ProductImage} style={styles.productImage} />
+
+                    <Image source={ProductImage} style={styles.productImage} />
+
+                    <View style={styles.informations}>
+                        <Text style={styles.nameProduct}>Neque porro dfs s das das quisquam</Text>
+                        <Text style={styles.costProduct}>R$ 110,90</Text>
+                        <Text style={styles.oldCostProduct}>R$ 150,85</Text>
+                        <Text style={styles.pay}>10 x 11,09 sem juros</Text>
+                        <RectButton style={styles.buttonBuy}>
+                            <Ionicons name="ios-cart" style={styles.iconButtonBuy}/>
+                            <Text style={styles.textButtonBuy}>Comprar agora</Text>
+                        </RectButton>
                     </View>
                 </View>
+
 
                 <View style={styles.store}>
                     <View style={styles.groupStoreName}>
                         <Image source={logoImage} style={styles.logotImage} />
                         <Text style={styles.nameStore}>Centauro</Text>
                     </View>
-                    <View style={styles.containerImageProducts}>
-                        <Image source={ProductImage} style={styles.productImage} />
+
+                    <Image source={ProductImage} style={styles.productImage} />
+
+                    <View style={styles.informations}>
+                        <Text style={styles.nameProduct}>Neque porro dfs s das das quisquam</Text>
+                        <Text style={styles.costProduct}>R$ 110,90</Text>
+                        <Text style={styles.oldCostProduct}>R$ 150,85</Text>
+                        <Text style={styles.pay}>10 x 11,09 sem juros</Text>
+                        <RectButton style={styles.buttonBuy}>
+                            <Ionicons name="ios-cart" style={styles.iconButtonBuy}/>
+                            <Text style={styles.textButtonBuy}>Comprar agora</Text>
+                        </RectButton>
                     </View>
                 </View>
+
 
                 <View style={styles.store}>
                     <View style={styles.groupStoreName}>
                         <Image source={logoImage} style={styles.logotImage} />
                         <Text style={styles.nameStore}>Centauro</Text>
                     </View>
-                    <View style={styles.containerImageProducts}>
-                        <Image source={ProductImage} style={styles.productImage} />
+
+                    <Image source={ProductImage} style={styles.productImage} />
+
+                    <View style={styles.informations}>
+                        <Text style={styles.nameProduct}>Neque porro dfs s das das quisquam</Text>
+                        <Text style={styles.costProduct}>R$ 110,90</Text>
+                        <Text style={styles.oldCostProduct}>R$ 150,85</Text>
+                        <Text style={styles.pay}>10 x 11,09 sem juros</Text>
+                        <RectButton style={styles.buttonBuy}>
+                            <Ionicons name="ios-cart" style={styles.iconButtonBuy}/>
+                            <Text style={styles.textButtonBuy}>Comprar agora</Text>
+                        </RectButton>
                     </View>
                 </View>
+
+
 
 
             </ScrollView>
