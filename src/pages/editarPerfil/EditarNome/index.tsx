@@ -2,10 +2,10 @@ import React from 'react'
 
 import styles from './styles'
 
-function EditProfile() {
+function Login() {
     return(
         
     )
 }
 
-export default EditProfile
+export default Login

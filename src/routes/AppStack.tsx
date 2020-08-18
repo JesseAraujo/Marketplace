@@ -10,7 +10,9 @@ function AppStack() {
     return (
         <NavigationContainer>
             <Navigator screenOptions={{ headerShown: false }}>
+
                 <Screen name="MarketTabs" component={MarketTabs} />
+
             </Navigator>
         </NavigationContainer>
     )

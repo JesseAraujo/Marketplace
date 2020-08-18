@@ -1,20 +1,29 @@
 import React from 'react'
 import { Text, View, Image } from 'react-native'
-import { ScrollView, BorderlessButton, RectButton } from 'react-native-gesture-handler'
+import { ScrollView, RectButton } from 'react-native-gesture-handler'
+import { useNavigation } from '@react-navigation/native'
 
 import { Ionicons } from '@expo/vector-icons'
 
 import imageProfile from '../../assets/images/avatar/avatar3.jpg'
 
 import styles from './styles'
+import routes from '../../components/routes'
 
 function Perfil() {
+    const { navigate } = useNavigation()
+
+    function handleNavigateToEditProfile() {
+        navigate('EditProfile')
+    }
+
     return (
+        
         <>
             <View style={styles.header}>
 
                 <View style={styles.button}>
-                    <RectButton>
+                    <RectButton onPress={handleNavigateToEditProfile}>
                         <Ionicons name="ios-brush" style={styles.iconEdit} />
                     </RectButton>
                 </View>
