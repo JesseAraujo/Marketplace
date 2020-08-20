@@ -93,10 +93,9 @@ const styles = StyleSheet.create({
 
     buttonLogout: {
         backgroundColor: '#B43737',
-        marginTop: 60,
+        marginTop: 10,
 
         height: 34,
-        borderRadius: 8,
 
         justifyContent: 'center',
         alignItems:'center',

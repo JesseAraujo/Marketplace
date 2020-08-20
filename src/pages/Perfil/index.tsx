@@ -5,10 +5,11 @@ import { useNavigation } from '@react-navigation/native'
 
 import { Ionicons } from '@expo/vector-icons'
 
+import Header from '../../components/Header'
+
 import imageProfile from '../../assets/images/avatar/avatar3.jpg'
 
 import styles from './styles'
-import routes from '../../components/routes'
 
 function Perfil() {
     const { navigate } = useNavigation()
@@ -20,6 +21,8 @@ function Perfil() {
     return (
         
         <>
+         <Header title='Meu Perfil'/>
+
             <View style={styles.header}>
 
                 <View style={styles.button}>

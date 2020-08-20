@@ -2,9 +2,10 @@ import React, { useState } from 'react'
 import { Text, View, Picker } from 'react-native'
 import { ScrollView, RectButton, BorderlessButton } from 'react-native-gesture-handler'
 
-import HeaderButton from '../../components/HeaderButton'
+
 import Filters from '../../components/Filters'
 import ProductsList from '../../components/ProductsList'
+import Carousel from '../../components/Carousel'
 
 import styles from './styles'
 
@@ -13,15 +14,15 @@ function ListaPromocao() {
 
     return (
         <View style={styles.container}>
-            <HeaderButton />
-
+            
             <ScrollView
                 showsVerticalScrollIndicator={false}
                 contentContainerStyle={{
                     paddingBottom: 16,
                 }}
             >
-                <Filters />
+                
+                <Filters title='Confira nas lojas da cidade' />
 
                 <View style={styles.sector}>
                     <View style={styles.sectorLabel}>
@@ -54,47 +55,13 @@ function ListaPromocao() {
                     </View>
 
                     <ProductsList />
-                </View>
+                </View>              
 
 
                 <View style={styles.sector}>
                     <View style={styles.sectorLabel}>
                         <Text style={styles.labelSector}>
-                            Eletônicos
-                        </Text>
-
-                        <BorderlessButton>
-                            <Text style={styles.viewMoreLabel}>
-                                Ver mais +
-                        </Text>
-                        </BorderlessButton>
-                    </View>
-
-                    <ProductsList />
-                </View>
-
-
-                <View style={styles.sector}>
-                    <View style={styles.sectorLabel}>
-                        <Text style={styles.labelSector}>
-                            Informática
-                        </Text>
-
-                        <BorderlessButton>
-                            <Text style={styles.viewMoreLabel}>
-                                Ver mais +
-                        </Text>
-                        </BorderlessButton>
-                    </View>
-
-                    <ProductsList />
-                </View>
-
-
-                <View style={styles.sector}>
-                    <View style={styles.sectorLabel}>
-                        <Text style={styles.labelSector}>
-                            Informática
+                            Diversos
                         </Text>
 
                         <BorderlessButton>

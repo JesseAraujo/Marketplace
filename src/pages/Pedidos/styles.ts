@@ -7,27 +7,10 @@ const styles = StyleSheet.create({
         backgroundColor: '#fff',
         flex: 1,
     },
-
-    header: {
-        width: '100%',
-        height: 70,
-        backgroundColor: '#285B7A',
-
-        justifyContent: 'center',
-        alignItems: 'center',
-    },
-
-    titleHeader: {
-        color: '#fff',
-        fontSize: 15,
-        textTransform: 'uppercase',
-        fontWeight: '700',
-        
-        marginTop: 20,
-    },
+    
 
     request: {
-        marginVertical: 5,
+        marginVertical: 10,
     },
 
 

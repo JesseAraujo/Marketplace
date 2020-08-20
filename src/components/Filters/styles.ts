@@ -8,7 +8,7 @@ const styles = StyleSheet.create({
     },
 
     filterGroup: {
-        marginTop: 20,
+        marginTop: 30,
     },
 
     filterGroupTitle: {
@@ -18,22 +18,12 @@ const styles = StyleSheet.create({
         color: '#3B3B3B',
     },
 
-    filterGroupSubTitle: {
-        fontSize: 13,
-    },
-
-    SubTitleTextColor: {
-        color: '#275671',
-    },
-
     filter: {
         flexDirection: 'row',
-        marginTop: 20,
+        marginTop: 2,
         justifyContent: 'space-between',
         alignItems: 'center',
 
-
-        borderTopWidth: 0.5,
         borderBottomWidth: 0.5,
         borderColor: '#08080824'
     },

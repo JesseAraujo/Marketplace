@@ -4,19 +4,19 @@ import { ScrollView } from 'react-native-gesture-handler'
 
 import { Ionicons } from '@expo/vector-icons'
 
-import styles from './styles'
+import Header from '../../components/Header'
 
 import LogoImage from '../../assets/images/centauro/logos/logo.png'
+
+import styles from './styles'
+
 
 function Pedidos() {
     return (
         <>
 
-            <View style={styles.header}>
-                <Text style={styles.titleHeader}>
-                    Meus Pedidos
-                </Text>
-            </View>
+        <Header title='Meus Pedidos'/>
+            
 
             <View style={styles.container}>
 

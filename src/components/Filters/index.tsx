@@ -6,40 +6,45 @@ import { Ionicons } from '@expo/vector-icons'
 
 import styles from './styles'
 
-function Filters() {
+interface FiltersProps {
+    title: string,
+}
+
+const Filters: React.FC<FiltersProps> = ({ title, children }) => {
     const [selectedValue, setSelectedValue] = useState("");
 
     return (
-            <View style={styles.filterGroup}>
-                <Text style={styles.filterGroupTitle}>
-                    Promoções
-                    </Text>
-                <Text style={styles.filterGroupSubTitle}>
-                    <Text style={styles.SubTitleTextColor}>
-                        Confira as promoções {' '}
-                    </Text>
-                        nas lojas da cidade
-                    </Text>
+        <View style={styles.filterGroup}>
+            <Text style={styles.filterGroupTitle}>
+                {title}
+            </Text>
 
-                <View style={styles.filter}>
+            <View style={styles.filter}>
 
-                    <Picker
-                        selectedValue={selectedValue}
-                        style={styles.pickerSelect}
-                        onValueChange={(itemValue, itemIndex) => setSelectedValue(itemValue)}
-                    >
-                        <Picker.Item label="Tipo de loja" value="tipo de loja" />
-                        <Picker.Item label="JavaScript" value="js" />
-                    </Picker>
+                <Picker
+                    selectedValue={selectedValue}
+                    style={styles.pickerSelect}
+                    onValueChange={(itemValue, itemIndex) => setSelectedValue(itemValue)}
+                >
+                    <Picker.Item label="Tipo de loja" value="" />
+                    <Picker.Item label="Restaurantes" value="Restaurantes" />
+                    <Picker.Item label="Calçados" value="Calçados" />
+                    <Picker.Item label="Roupas" value="Roupas" />
+                    <Picker.Item label="Acessórios" value="Acessórios" />
+                    <Picker.Item label="Lanchonetes" value="Lanchonetes" />
+                    <Picker.Item label="Pizzaria" value="Pizzaria" />
+                    <Picker.Item label="Informática/ Eletrônicos" value="Informática/ Eletrônicos" />
+                    <Picker.Item label="Móveis" value="Móveis" />
+                </Picker>
 
-                    <RectButton style={styles.filterButton}>
-                        <Ionicons name="ios-funnel" />
-                        <Text style={styles.textButtonFilter}>
-                            Filtrar
-                            </Text>
-                    </RectButton>
-                </View>
+                <RectButton style={styles.filterButton}>
+                    <Ionicons name="ios-funnel" />
+                    <Text style={styles.textButtonFilter}>
+                        Filtrar
+                    </Text>
+                </RectButton>
             </View>
+        </View>
     )
 }
 

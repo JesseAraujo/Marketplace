@@ -2,7 +2,8 @@ import React from 'react'
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
 import { Ionicons } from '@expo/vector-icons'
 
-import ListaPromocao from '../pages/ListaPromocao'
+
+import Teste from './MarketplaceTabsTop'
 import Busca from '../pages/Busca'
 import Pedidos from '../pages/Pedidos'
 import Perfil from '../pages/Perfil'
@@ -42,8 +43,8 @@ function MarketTabs() {
         
         >
             <Screen 
-                name="ListaPromocao" 
-                component={ListaPromocao} 
+                name="Teste" 
+                component={Teste} 
                 options={{ 
                     tabBarLabel: 'Início',
                     tabBarIcon: ({ color, size, focused }) => {
