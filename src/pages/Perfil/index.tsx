@@ -14,8 +14,8 @@ import styles from './styles'
 function Perfil() {
     const { navigate } = useNavigation()
 
-    function handleNavigateToEditProfile() {
-        navigate('EditProfile')
+    function handleNavigateToLogout() {
+        navigate('Login')
     }
 
     return (
@@ -26,7 +26,7 @@ function Perfil() {
             <View style={styles.header}>
 
                 <View style={styles.button}>
-                    <RectButton onPress={handleNavigateToEditProfile}>
+                    <RectButton>
                         <Ionicons name="ios-brush" style={styles.iconEdit} />
                     </RectButton>
                 </View>
@@ -89,7 +89,7 @@ function Perfil() {
                         </View>
                     </RectButton>
 
-                    <RectButton style={styles.buttonLogout}>
+                    <RectButton style={styles.buttonLogout} onPress={handleNavigateToLogout}>
                         <Text style={styles.textLogout}>
                             Sair
                         </Text>
