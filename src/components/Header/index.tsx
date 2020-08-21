@@ -7,7 +7,7 @@ interface HeaderProps {
     title: string,
 }
 
-const HeaderPage: React.FC<HeaderProps> = ({ title, children }) => {
+const HeaderPage: React.FC<HeaderProps> = ({ title }) => {
     return (
         <View style={styles.header}>
             <Text style={styles.titleHeader}>

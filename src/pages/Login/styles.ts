@@ -20,45 +20,36 @@ const styles = StyleSheet.create({
         paddingBottom: 0,
         backgroundColor: '#fff',       
 
-        width: '80%',
-        marginTop: -30,
+        width: '90%',
+        marginTop: -50,
 
         borderRadius: 8,
     },
-
-    label: {
-        color: '#5D5D5D',
-        fontSize: 10,
-    },
-
-    input: {
-        height: 33,
-
-        borderWidth: 0.5,
-        borderColor: '#08080824',
-
-        paddingLeft: 20,
-
-        marginTop: 10,
-        marginBottom: 20,
-    },
+ 
 
     esqueceuSenhaCadastro: {
+        flexDirection: 'row',
+        alignItems:'center',
+        marginTop: 5,
+    },
+
+    SenhaCadastro: {
         color: '#727272',
         fontSize: 12,
     },
 
-    loginButton: {
-        backgroundColor: '#285B7A',
-        padding: 10,
-        borderRadius: 8,
+    SenhaCadastroButton: {
+        color: '#397EA7',
+        marginLeft: 5,
+    },
 
-        flexDirection: 'row',
-        justifyContent:'space-evenly',
-        alignItems: 'center',
+ 
 
-        marginTop: 10,
-        marginBottom: 10,
+    textOu:{
+        fontSize: 10,
+        color: '#C4C4C4',
+        textAlign: 'center',
+        marginVertical: 10,
     },
 
     facebook: {

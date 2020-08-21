@@ -47,10 +47,10 @@ const styles = StyleSheet.create({
 
     header: {
         backgroundColor: '#285B7A',
+        marginTop:-36
     },
 
     tabHeading: {
-        marginTop: -10,
         backgroundColor: '#285B7A',
         borderWidth: 0
     }
