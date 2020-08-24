@@ -1,11 +1,15 @@
 import React from 'react'
+import HeaderBack from '../../components/HeaderBack'
 
 import styles from './styles'
 
-function Login() {
-    return(
-        
+function StorePage() {
+
+    return (
+        <>
+            <HeaderBack title='Pagina Loja' />
+        </>
     )
 }
 
-export default Login
+export default StorePage

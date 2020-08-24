@@ -1,11 +1,15 @@
 import React from 'react'
 
+import HeaderBack from '../../../components/HeaderBack'
+
 import styles from './styles'
 
-function Login() {
+function StoreInformations() {
     return(
-        
+        <>
+            <HeaderBack title='Informações' />
+        </>
     )
 }
 
-export default Login
+export default StoreInformations

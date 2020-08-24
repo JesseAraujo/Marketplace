@@ -26,6 +26,10 @@ function Perfil() {
         navigate('Favoritos')
     }
 
+    function handleNavigateToAdress() {
+        navigate('Enderecos')
+    }
+
     return (
 
         <>
@@ -71,7 +75,7 @@ function Perfil() {
                         </View>
                     </RectButton>
 
-                    <RectButton>
+                    <RectButton onPress={handleNavigateToAdress}>
                         <View style={styles.item}>
                             <Ionicons name="ios-navigate" style={styles.iconItem} />
 

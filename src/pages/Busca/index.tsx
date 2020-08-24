@@ -7,8 +7,20 @@ import { Ionicons } from '@expo/vector-icons'
 import Header from '../../components/Header'
 
 import styles from './styles'
+import { useNavigation } from '@react-navigation/native'
 
 function Busca() {
+    const { navigate } = useNavigation()
+
+    function HandleNavigateToResultSearch() {
+        navigate('ResultadoBusca')
+    }
+
+    function HandleNavigateToStoreList() {
+        navigate('ListagemLojas')
+    }
+
+
     return (
         <>
             <Header title='Busca' />
@@ -16,7 +28,7 @@ function Busca() {
             <View style={styles.container}>
                 <View style={styles.groupSearch}>
                     <TextInput style={styles.inputSearch} placeholder="Item ou loja" placeholderTextColor="#c1bccc" />
-                    <RectButton style={styles.buttonSearch}>
+                    <RectButton style={styles.buttonSearch} onPress={HandleNavigateToResultSearch}>
                         <Ionicons name="ios-search" style={styles.iconSearch} />
                     </RectButton>
 
@@ -61,7 +73,7 @@ function Busca() {
                         <Text style={styles.recentSearchTitle}>Categorias</Text>
 
                         <View style={styles.groupButton}>
-                            <RectButton style={styles.buttonCategory}>
+                            <RectButton style={styles.buttonCategory} onPress={HandleNavigateToStoreList}>
                                 <Text style={styles.textButton}>Promoções</Text>
                             </RectButton>
 

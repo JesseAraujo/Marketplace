@@ -1,11 +1,15 @@
 import React from 'react'
+import HeaderBack from '../../components/HeaderBack'
 
 import styles from './styles'
 
-function Login() {
-    return(
-        
+function SearchResult() {
+
+    return (
+        <>
+            <HeaderBack title='Resultado Busca' />
+        </>
     )
 }
 
-export default Login
+export default SearchResult

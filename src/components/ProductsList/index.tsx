@@ -8,9 +8,16 @@ import ProductImage from '../../assets/images/centauro/products/shoes.png'
 import logoImage from '../../assets/images/centauro/logos/logo.png'
 
 import styles from './styles'
+import { useNavigation } from '@react-navigation/native'
 
 function ProductsList() {
     const [selectedValue, setSelectedValue] = useState("");
+    const { navigate } = useNavigation()
+
+
+    function HandleNavigateToCart() {
+        navigate('Carrinho')
+    }
 
     return (
 
@@ -34,7 +41,7 @@ function ProductsList() {
                         <Text style={styles.costProduct}>R$ 110,90</Text>
                         <Text style={styles.oldCostProduct}>R$ 150,85</Text>
                         <Text style={styles.pay}>10 x 11,09 sem juros</Text>
-                        <RectButton style={styles.buttonBuy}>
+                        <RectButton style={styles.buttonBuy} onPress={HandleNavigateToCart}>
                             <Ionicons name="ios-cart" style={styles.iconButtonBuy}/>
                             <Text style={styles.textButtonBuy}>Comprar agora</Text>
                         </RectButton>
@@ -55,7 +62,7 @@ function ProductsList() {
                         <Text style={styles.costProduct}>R$ 110,90</Text>
                         <Text style={styles.oldCostProduct}>R$ 150,85</Text>
                         <Text style={styles.pay}>10 x 11,09 sem juros</Text>
-                        <RectButton style={styles.buttonBuy}>
+                        <RectButton style={styles.buttonBuy} onPress={HandleNavigateToCart}>
                             <Ionicons name="ios-cart" style={styles.iconButtonBuy}/>
                             <Text style={styles.textButtonBuy}>Comprar agora</Text>
                         </RectButton>
@@ -76,8 +83,8 @@ function ProductsList() {
                         <Text style={styles.costProduct}>R$ 110,90</Text>
                         <Text style={styles.oldCostProduct}>R$ 150,85</Text>
                         <Text style={styles.pay}>10 x 11,09 sem juros</Text>
-                        <RectButton style={styles.buttonBuy}>
-                            <Ionicons name="ios-cart" style={styles.iconButtonBuy}/>
+                        <RectButton style={styles.buttonBuy} onPress={HandleNavigateToCart}>
+                            <Ionicons name="ios-cart" style={styles.iconButtonBuy} />
                             <Text style={styles.textButtonBuy}>Comprar agora</Text>
                         </RectButton>
                     </View>
@@ -97,7 +104,7 @@ function ProductsList() {
                         <Text style={styles.costProduct}>R$ 110,90</Text>
                         <Text style={styles.oldCostProduct}>R$ 150,85</Text>
                         <Text style={styles.pay}>10 x 11,09 sem juros</Text>
-                        <RectButton style={styles.buttonBuy}>
+                        <RectButton style={styles.buttonBuy} onPress={HandleNavigateToCart}>
                             <Ionicons name="ios-cart" style={styles.iconButtonBuy}/>
                             <Text style={styles.textButtonBuy}>Comprar agora</Text>
                         </RectButton>

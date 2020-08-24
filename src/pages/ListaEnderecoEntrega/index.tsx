@@ -1,11 +1,12 @@
 import React from 'react'
 
 import styles from './styles'
+import { Text } from 'react-native'
 
-function Login() {
+function Enderecos() {
     return(
-        
+        <Text>enderecos</Text>
     )
 }
 
-export default Login
+export default Enderecos

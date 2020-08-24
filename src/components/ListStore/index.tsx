@@ -7,13 +7,20 @@ import styles from './styles'
 
 import logoImage from '../../assets/images/centauro/logos/logo.png'
 import { RectButton } from 'react-native-gesture-handler'
+import { useNavigation } from '@react-navigation/native'
 
 function ListStores() {
+    const { navigate } = useNavigation()
+
+    function HandleNagigateTo() {
+        navigate('PaginaLoja')
+    }
+
     return (
 
         <View style={styles.groupStore}>
 
-            <RectButton style={styles.button}>
+            <RectButton style={styles.button} onPress={HandleNagigateTo}>
                 <View style={styles.store}>
                     <Image source={logoImage} style={styles.imageLogo} />
                     <View style={styles.groupLabels}>
@@ -43,7 +50,7 @@ function ListStores() {
             </RectButton>
 
 
-            <RectButton style={styles.button}>
+            <RectButton style={styles.button} onPress={HandleNagigateTo}>
                 <View style={styles.store}>
                     <Image source={logoImage} style={styles.imageLogo} />
                     <View style={styles.groupLabels}>
@@ -74,7 +81,7 @@ function ListStores() {
 
 
 
-            <RectButton style={styles.button}>
+            <RectButton style={styles.button} onPress={HandleNagigateTo}>
                 <View style={styles.store}>
                     <Image source={logoImage} style={styles.imageLogo} />
                     <View style={styles.groupLabels}>
@@ -105,7 +112,7 @@ function ListStores() {
 
             
 
-            <RectButton style={styles.button}>
+            <RectButton style={styles.button} onPress={HandleNagigateTo}>
                 <View style={styles.store}>
                     <Image source={logoImage} style={styles.imageLogo} />
                     <View style={styles.groupLabels}>
