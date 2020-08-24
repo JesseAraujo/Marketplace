@@ -13,8 +13,8 @@ function Resetpassword() {
             <HeaderBack title='Nova Senha' />
 
             <View style={styles.container}>
-                <InputText label='Nova Senha' placeholder='Digite uma nova senha' secure={false}/>
-                <InputText label='Confirma Senha' placeholder='Confirme senha' secure={false}/>
+                <InputText label='Nova Senha' placeholder='Digite uma nova senha' secure={true}/>
+                <InputText label='Confirma Senha' placeholder='Confirme senha' secure={true}/>
                 <ButtonSimple text='Alterar Senha' page='Login'/>  
             </View>
         </>

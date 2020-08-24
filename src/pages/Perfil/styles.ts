@@ -24,10 +24,15 @@ const styles = StyleSheet.create({
         
     },
 
-    iconEdit: {
-        color: '#272727',
-        padding: 10,
+    buttonEdit: {
         fontSize: 20,
+        marginTop: -20,
+        marginRight: 15,
+    },
+
+    iconEdit: {
+        fontSize: 15,
+        color: '#939393',
     },
 
     profile: {
@@ -93,7 +98,7 @@ const styles = StyleSheet.create({
 
     buttonLogout: {
         backgroundColor: '#B43737',
-        marginTop: 10,
+        marginTop: 30,
 
         height: 34,
 

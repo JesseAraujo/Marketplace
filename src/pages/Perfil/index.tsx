@@ -3,7 +3,7 @@ import { Text, View, Image } from 'react-native'
 import { ScrollView, RectButton } from 'react-native-gesture-handler'
 import { useNavigation } from '@react-navigation/native'
 
-import { Ionicons } from '@expo/vector-icons'
+import { FontAwesome5, Ionicons } from '@expo/vector-icons'
 
 import Header from '../../components/Header'
 
@@ -18,16 +18,20 @@ function Perfil() {
         navigate('Login')
     }
 
+    function handleNavigateToEditProfile() {
+        navigate('EditarPerfil')
+    }
+
     return (
-        
+
         <>
-         <Header title='Meu Perfil'/>
+            <Header title='' />
 
             <View style={styles.header}>
 
                 <View style={styles.button}>
-                    <RectButton>
-                        <Ionicons name="ios-brush" style={styles.iconEdit} />
+                    <RectButton onPress={handleNavigateToEditProfile} style={styles.buttonEdit}>
+                        <FontAwesome5 name="edit" style={styles.iconEdit} />
                     </RectButton>
                 </View>
 

@@ -9,6 +9,12 @@ import RecuperarSenhaEmail from '../pages/RecuperarSenha/ConfirmarEmail'
 import NovaSenha from '../pages/RecuperarSenha/NovaSenha'
 import CadastroUsuarios from '../pages/CadastroUsuario'
 
+import EditarPerfil from '../pages/EditarPerfil'
+import EditarNome from '../pages/EditarPerfil/EditarNome'
+import EditarCPF from '../pages/EditarPerfil/EditarCPF'
+import EditarTelefone from '../pages/EditarPerfil/EditarTelefone'
+
+
 const { Navigator, Screen } = createStackNavigator()
 
 function AppStack() {
@@ -22,6 +28,11 @@ function AppStack() {
                 <Screen name="RecuperarSenhaEmail" component={RecuperarSenhaEmail} />
                 <Screen name="NovaSenha" component={NovaSenha} />
                 <Screen name="CadastroUsuarios" component={CadastroUsuarios} />
+
+                <Screen name="EditarPerfil" component={EditarPerfil} />
+                <Screen name="EditarNome" component={EditarNome} />
+                <Screen name="EditarCPF" component={EditarCPF} />
+                <Screen name="EditarTelefone" component={EditarTelefone} />
 
             </Navigator>
         </NavigationContainer>

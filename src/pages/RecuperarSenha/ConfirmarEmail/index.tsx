@@ -1,5 +1,5 @@
 import React from 'react'
-import { View, Text } from 'react-native'
+import { View } from 'react-native'
 
 import InputText from '../../../components/InputText'
 import HeaderBack from '../../../components/HeaderBack'
