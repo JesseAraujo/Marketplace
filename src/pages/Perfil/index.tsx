@@ -22,6 +22,10 @@ function Perfil() {
         navigate('EditarPerfil')
     }
 
+    function handleNavigateToFavorites() {
+        navigate('Favoritos')
+    }
+
     return (
 
         <>
@@ -54,7 +58,7 @@ function Perfil() {
                     }}
                 >
 
-                    <RectButton>
+                    <RectButton onPress={handleNavigateToFavorites}>
                         <View style={styles.item}>
                             <Ionicons name="ios-heart" style={styles.iconItem} />
 
