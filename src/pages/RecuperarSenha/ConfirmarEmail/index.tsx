@@ -8,18 +8,17 @@ import ButtonSimple from '../../../components/ButtonSimple'
 import styles from './styles'
 
 function ResetPassword() {
-    
+
     return (
 
         <>
             <HeaderBack title='Recuperar Senha' />
 
             <View style={styles.container}>
-                <InputText label='E-mail' placeholder='E-mail cadastrado' secure={false}/>
-                <ButtonSimple text='Continuar' page='NovaSenha'/>
-                
-
+                <InputText label='E-mail' placeholder='E-mail cadastrado' secure={false} />
             </View>
+            
+            <ButtonSimple text='Continuar' page='NovaSenha' />
         </>
 
 

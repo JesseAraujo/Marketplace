@@ -16,10 +16,8 @@ function EditCpf() {
 
             <View style={styles.container}>
                 <InputText label='CPF' placeholder='123.456.789-10' secure={false}/>
-                <ButtonSimple text='Salvar' page='EditarPerfil'/>
-                
-
             </View>
+                <ButtonSimple text='Salvar' page='EditarPerfil'/>
         </>
 
 

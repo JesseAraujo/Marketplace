@@ -1,6 +1,6 @@
 import React from 'react'
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
-import { Ionicons } from '@expo/vector-icons'
+import { Ionicons, Entypo } from '@expo/vector-icons'
 
 
 import Teste from './MarketplaceTabsTop'
@@ -32,7 +32,8 @@ function MarketTabs() {
                 },
                 labelStyle: {
                     fontSize: 10,
-                    justifyContent: 'center'
+                    justifyContent: 'center',
+                    marginTop: 5,
                 },
                 inactiveBackgroundColor: '#285B7A',
                 activeBackgroundColor: '#fff',
@@ -49,7 +50,7 @@ function MarketTabs() {
                     tabBarLabel: 'Início',
                     tabBarIcon: ({ color, size, focused }) => {
                         return (
-                            <Ionicons name="ios-home" size={size} color={focused? '#285B7A' : color} />
+                            <Ionicons name="md-home" size={size} color={focused? '#285B7A' : color} />
                         )
                     }
                 }}
@@ -61,7 +62,7 @@ function MarketTabs() {
                     tabBarLabel: 'Busca',
                     tabBarIcon: ({ color, size, focused }) => {
                         return (
-                            <Ionicons name="ios-search" size={size} color={focused? '#285B7A' : color}/>
+                            <Ionicons name="md-search" size={size} color={focused? '#285B7A' : color}/>
                         )
                     }
                 }}
@@ -73,7 +74,7 @@ function MarketTabs() {
                     tabBarLabel: 'Pedidos',
                     tabBarIcon: ({ color, size, focused }) => {
                         return (
-                            <Ionicons name="ios-bookmark" size={size} color={focused? '#285B7A' : color}/>
+                            <Entypo name="ticket" size={size} color={focused? '#285B7A' : color}/>
                         )
                     }
                 }}
@@ -85,7 +86,7 @@ function MarketTabs() {
                     tabBarLabel: 'Perfil',
                     tabBarIcon: ({ color, size, focused }) => {
                         return (
-                            <Ionicons name="ios-person" size={size} color={focused? '#285B7A' : color}/>
+                            <Ionicons name="md-person" size={size} color={focused? '#285B7A' : color}/>
                         )
                     }
                 }}

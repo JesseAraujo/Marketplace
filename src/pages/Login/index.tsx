@@ -21,6 +21,10 @@ function Login() {
     function handleNavigateToNewUser() {
         navigate('CadastroUsuarios')
     }
+
+    function handleNavigateToLogin() {
+        navigate('MarketTabs')
+    }
     
     return (
         <View style={styles.container}>
@@ -29,7 +33,7 @@ function Login() {
 
             <View style={styles.content}>
                 <InputText label='E-mail/CPF' placeholder='E-mail/ CPF' secure={false}/>
-                <InputText label='Senha' placeholder='Senha' secure={true}/>
+                <InputText label='Senha' placeholder='*******' secure={true}/>
 
 
                 <View style={styles.esqueceuSenhaCadastro}>
@@ -54,7 +58,9 @@ function Login() {
                     </RectButton>
                 </View>
 
-                <ButtonSimple text='Entrar' page='MarketTabs'/>
+                <RectButton style={styles.login} onPress={handleNavigateToLogin}>
+                    <Text style={styles.textButton} >Entrar</Text>
+                </RectButton>
 
 
                 <Text style={styles.textOu} >ou</Text>

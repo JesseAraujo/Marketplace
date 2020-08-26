@@ -18,9 +18,10 @@ function Login() {
                 <InputText label='E-mail' placeholder='seuemail@email.com' secure={false}/>
                 <InputText label='Senha' placeholder='*********' secure={true}/>
                 <InputText label='Confirma Senha' placeholder='*********' secure={true}/>
-                <ButtonSimple text='Salvar' page='Login'/>  
                 
             </View>
+                <ButtonSimple text='Salvar' page='Login'/>  
+                
         </>
     )
 }

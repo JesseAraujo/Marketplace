@@ -30,6 +30,10 @@ function Perfil() {
         navigate('Enderecos')
     }
 
+    function handleNavigateToPasswordEdit() {
+        navigate('AlterarSenha')
+    }
+
     return (
 
         <>
@@ -88,7 +92,7 @@ function Perfil() {
                         </View>
                     </RectButton>
 
-                    <RectButton>
+                    <RectButton onPress={handleNavigateToPasswordEdit}>
                         <View style={styles.item}>
                             <Ionicons name="ios-lock" style={styles.iconItem} />
 

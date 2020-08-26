@@ -73,11 +73,8 @@ function Busca() {
                         <Text style={styles.recentSearchTitle}>Categorias</Text>
 
                         <View style={styles.groupButton}>
-                            <RectButton style={styles.buttonCategory} onPress={HandleNavigateToStoreList}>
-                                <Text style={styles.textButton}>Promoções</Text>
-                            </RectButton>
 
-                            <RectButton style={styles.buttonCategory}>
+                            <RectButton style={styles.buttonCategory} onPress={HandleNavigateToStoreList}>
                                 <Text style={styles.textButton}>LANCHES</Text>
                             </RectButton>
 

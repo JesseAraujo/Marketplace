@@ -43,6 +43,19 @@ const styles = StyleSheet.create({
         marginLeft: 5,
     },
 
+
+    login: {
+        backgroundColor: '#133C54',
+        padding: 10,
+        borderRadius: 8,
+
+        flexDirection: 'row',
+        justifyContent:'space-evenly',
+        alignItems: 'center',
+
+        marginTop: 20,
+        marginBottom: 10,
+    },
  
 
     textOu:{

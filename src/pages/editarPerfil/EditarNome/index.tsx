@@ -8,18 +8,16 @@ import ButtonSimple from '../../../components/ButtonSimple'
 import styles from './styles'
 
 function EditName() {
-    
+
     return (
 
         <>
             <HeaderBack title='Nome' />
 
             <View style={styles.container}>
-                <InputText label='Nome completo' placeholder='Seu nome completo' secure={false}/>
-                <ButtonSimple text='Salvar' page='EditarPerfil'/>
-                
-
+                <InputText label='Nome completo' placeholder='Seu nome completo' secure={false} />
             </View>
+            <ButtonSimple text='Salvar' page='EditarPerfil' />
         </>
 
 

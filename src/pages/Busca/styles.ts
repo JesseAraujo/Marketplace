@@ -10,7 +10,7 @@ const styles = StyleSheet.create({
 
     groupSearch: {
         width: '100%',
-        paddingTop: 40,
+        paddingTop: 10,
         paddingBottom: 30,
         
         borderBottomWidth: 0.5,
@@ -23,7 +23,7 @@ const styles = StyleSheet.create({
     },
 
     inputSearch: {
-        width: '70%',
+        width: '80%',
         height: 33,
 
         borderWidth: 0.5,

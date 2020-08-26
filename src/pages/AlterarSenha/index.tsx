@@ -12,14 +12,18 @@ function AlterarSenha() {
     return (
 
         <>
-            <HeaderBack title='CPF' />
+            <HeaderBack title='ALterar Senha' />
 
             <View style={styles.container}>
-                <InputText label='CPF' placeholder='123.456.789-10' secure={false}/>
-                <ButtonSimple text='Salvar' page='EditarPerfil'/>
-                
+                <InputText label='Senha atual' placeholder='Digite a senha atual' secure={true} />
 
+                <View style={styles.line}></View>
+
+                <InputText label='Nova senha' placeholder='Digite uma nova senha' secure={true} />
+                <InputText label='Confirma senha' placeholder='Confirme senha' secure={true} />
             </View>
+            
+            <ButtonSimple text='Alterar' page='Perfil' />
         </>
 
 
