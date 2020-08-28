@@ -1,7 +1,7 @@
 import React from 'react'
 import { View, Image, Text } from 'react-native'
 
-import { Ionicons } from '@expo/vector-icons'
+import { Ionicons, Entypo } from '@expo/vector-icons'
 
 import styles from './styles'
 
@@ -34,11 +34,11 @@ function ListStores() {
                         <View style={styles.groupAdress}>
 
                             <Text style={styles.adress}>
-                                <Ionicons name="ios-navigate" /> {' '} Av. Tal, 123 - Centro
+                                <Entypo name="location-pin" /> {' '} Av. Tal, 123 - Centro
                             </Text>
 
                             <Text style={styles.phone}>
-                                <Ionicons name="ios-call" /> {' '} Roupas - Calçados
+                                <Entypo name="phone" /> {' '} (14) 3351-2542
                             </Text>
                         </View>
                     </View>
@@ -64,11 +64,11 @@ function ListStores() {
                         <View style={styles.groupAdress}>
 
                             <Text style={styles.adress}>
-                                <Ionicons name="ios-navigate" /> {' '} Av. Tal, 123 - Centro
+                                <Entypo name="location-pin" /> {' '} Av. Tal, 123 - Centro
                             </Text>
 
                             <Text style={styles.phone}>
-                                <Ionicons name="ios-call" /> {' '} Roupas - Calçados
+                                <Entypo name="phone" /> {' '} (14) 3351-2542
                             </Text>
                         </View>
                     </View>
@@ -78,8 +78,6 @@ function ListStores() {
                     </Text>
                 </View>
             </RectButton>
-
-
 
             <RectButton style={styles.button} onPress={HandleNagigateTo}>
                 <View style={styles.store}>
@@ -95,11 +93,11 @@ function ListStores() {
                         <View style={styles.groupAdress}>
 
                             <Text style={styles.adress}>
-                                <Ionicons name="ios-navigate" /> {' '} Av. Tal, 123 - Centro
+                                <Entypo name="location-pin" /> {' '} Av. Tal, 123 - Centro
                             </Text>
 
                             <Text style={styles.phone}>
-                                <Ionicons name="ios-call" /> {' '} Roupas - Calçados
+                                <Entypo name="phone" /> {' '} (14) 3351-2542
                             </Text>
                         </View>
                     </View>
@@ -109,8 +107,6 @@ function ListStores() {
                     </Text>
                 </View>
             </RectButton>
-
-            
 
             <RectButton style={styles.button} onPress={HandleNagigateTo}>
                 <View style={styles.store}>
@@ -126,11 +122,11 @@ function ListStores() {
                         <View style={styles.groupAdress}>
 
                             <Text style={styles.adress}>
-                                <Ionicons name="ios-navigate" /> {' '} Av. Tal, 123 - Centro
+                                <Entypo name="location-pin" /> {' '} Av. Tal, 123 - Centro
                             </Text>
 
                             <Text style={styles.phone}>
-                                <Ionicons name="ios-call" /> {' '} Roupas - Calçados
+                                <Entypo name="phone" /> {' '} (14) 3351-2542
                             </Text>
                         </View>
                     </View>
@@ -140,9 +136,6 @@ function ListStores() {
                     </Text>
                 </View>
             </RectButton>
-
-
-
 
         </View>
 
