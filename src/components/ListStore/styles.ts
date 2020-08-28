@@ -33,11 +33,10 @@ const styles = StyleSheet.create({
     },
 
     sectorStore: {
-        color: '#272727',
-        fontSize: 9,
-        fontWeight: '100',
-        
-        marginTop: -4,
+        color: '#08080882',
+        fontSize: 10,
+        fontStyle: 'italic',
+        top: -3,
     },
 
     groupAdress: {

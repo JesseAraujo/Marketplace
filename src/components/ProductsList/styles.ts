@@ -11,6 +11,7 @@ const styles = StyleSheet.create({
         padding: 8,
         marginRight: 10,
         borderRadius: 4,
+        marginBottom: 20,
     },
 
     groupStoreName: {
@@ -107,6 +108,9 @@ const styles = StyleSheet.create({
         color: '#fff',
         fontSize: 12,
     },
+
+
+    
 
 
 })
