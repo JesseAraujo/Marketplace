@@ -8,7 +8,7 @@ export default function App() {
    
     <>
      <AppStack />
-     <StatusBar backgroundColor="#133C54" style='light'/>
+     <StatusBar backgroundColor="#133C54" style='auto'/>
     </>
       
      
